@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_profile"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="mtech.com.ownerapp.Settings.Profile">
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="MTrack"
+    android:textSize="30sp"
+    android:layout_gravity="center"
+    android:textStyle="bold"
+    android:textColor="@color/colorPrimaryDark"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10sp"
+        android:padding="10sp"
+        android:background="#ffffff"
+        >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="App Information"
+        android:textColor="#4a4a4a"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="15sp"
+       >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Society Name"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:id="@+id/buildingName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Society Name"
+            android:textColor="#4a4a4a"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:textSize="14sp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="15sp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Owner Name"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:textSize="14sp"/>
+        <TextView
+            android:id="@+id/owner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Owner Name"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:textColor="#4a4a4a"
+            android:textSize="14sp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="15sp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Flat Number"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:textSize="14sp"/>
+        <TextView
+            android:id="@+id/flatNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Flat Number"
+            android:layout_weight="1"
+            android:textColor="#4a4a4a"
+            android:textStyle="bold"
+            android:textSize="14sp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="15sp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Username"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:textSize="14sp"/>
+        <TextView
+            android:id="@+id/userid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="username"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:textColor="#4a4a4a"
+            android:textSize="14sp"/>
+    </LinearLayout>
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="1sp"
+            android:layout_marginTop="15sp"
+            android:background="#4a4a4a" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="30sp"
+            android:background="@drawable/edittext"
+            android:hint="Enter your email id"
+            android:padding="5sp"
+            android:layout_marginTop="15sp"
+            android:id="@+id/emailId"/>
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:layout_marginTop="10sp"
+            android:id="@+id/useEmail"
+            android:text="Use my email to login"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="40sp"
+            android:layout_gravity="center"
+            android:text="SAVE"
+            android:onClick="save"
+            android:layout_marginTop="12sp"
+            android:textColor="#ffffff"
+            android:background="#1e90ff"/>
+
+        </LinearLayout>
+
+</LinearLayout>

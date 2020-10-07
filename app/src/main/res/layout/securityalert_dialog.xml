@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:background="@color/white"
+    android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="10sp"
+            android:weightSum="4">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:id="@+id/ll1">
+                        <ImageView
+                            android:id="@+id/fire"
+                            android:layout_width="50sp"
+                            android:layout_height="50sp"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:layout_margin="20sp"
+                            android:background="@drawable/fire" />
+                        <TextView
+                            android:id="@+id/txt_fire"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="FIRE"
+                            android:textColor="@color/black"
+                            android:textSize="10sp"
+                            android:layout_marginBottom="10sp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/ll2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+                        <ImageView
+                            android:id="@+id/lift"
+                            android:layout_width="50sp"
+                            android:layout_height="50sp"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+
+                            android:layout_margin="20sp"
+                            android:background="@drawable/elevator" />
+                        <TextView
+                            android:id="@+id/txt_lift"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="STUCK IN LIFT"
+                            android:textColor="@color/black"
+                            android:textSize="10sp"
+                            android:layout_marginBottom="10sp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/ll3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+                        <ImageView
+                            android:id="@+id/animal"
+                            android:layout_width="50sp"
+                            android:layout_height="50sp"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:layout_margin="20sp"
+                            android:background="@drawable/snake" />
+                        <TextView
+                            android:id="@+id/txt_animal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="ANIMAL THREAT"
+                            android:textColor="@color/black"
+                            android:textSize="10sp"
+                            android:layout_marginBottom="10sp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/ll4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+                        <ImageView
+                            android:id="@+id/fight"
+                            android:layout_width="50sp"
+                            android:layout_height="50sp"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+
+                            android:layout_margin="20sp"
+                            android:background="@drawable/fight" />
+                        <TextView
+                            android:id="@+id/txt_fight"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="VISITOR THREAT"
+                            android:textColor="@color/black"
+                            android:textSize="10sp"
+                            android:layout_marginBottom="10sp"/>
+                </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="match_parent"
+            android:layout_height="1sp"
+            android:background="@color/lightGray" />
+
+        <Button
+            android:id="@+id/freq"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="20sp"
+            android:layout_margin="20sp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Raise Alarm "
+            android:onClick="raiseAlarm"
+            android:background="@color/colorAccent"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+</LinearLayout>

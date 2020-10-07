@@ -1,0 +1,161 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/feed_bg"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/ll2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="50sp"
+            android:background="@drawable/edittext"
+            android:layout_weight="0.75"
+            android:hint="Enter Vehicle Number"
+            android:paddingLeft="20sp"
+            android:layout_marginTop="2sp"
+            android:id="@+id/vehicleNo"/>
+        <Button
+            android:layout_width="6dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/search"
+            android:background="@drawable/add_button"
+            android:textColor="@color/colorPrimaryDark"
+            android:onClick="search"
+            android:layout_weight="0.30"
+            android:text="Search"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:layout_marginLeft="@dimen/feed_item_margin"
+            android:layout_marginRight="@dimen/feed_item_margin"
+            android:layout_marginTop="@dimen/feed_item_margin"
+            android:background="@drawable/bg_parent_rounded_corner"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/feed_item_padding_left_right"
+            android:paddingRight="@dimen/feed_item_padding_left_right"
+            android:id="@+id/title"
+            android:visibility="gone"
+            android:text="Vehicle Details"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/feed_item_margin"
+            android:layout_marginRight="@dimen/feed_item_margin"
+            android:layout_marginTop="@dimen/feed_item_margin"
+            android:background="@drawable/bg_parent_rounded_corner"
+            android:paddingTop="@dimen/feed_item_padding_top_bottom"
+            android:paddingLeft="@dimen/feed_item_padding_left_right"
+            android:paddingRight="@dimen/feed_item_padding_left_right"
+            android:paddingBottom="@dimen/feed_item_padding_top_bottom"
+            android:id="@+id/LL1"
+            android:visibility="gone"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0sp"
+                    android:layout_height="wrap_content"
+                    android:text="Flat No : "
+                    android:id="@+id/flatNo"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_weight="0.9"/>
+
+                <Button
+                    android:layout_width="0sp"
+                    android:layout_height="20sp"
+                    android:layout_weight="0.1"
+                    android:onClick="sendMsg"
+                    android:id="@+id/sendMsg"
+                    android:background="@drawable/sendmsg"/>
+
+            </LinearLayout>
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="1sp"
+                android:layout_marginTop="8sp"
+                android:background="#c2c3c8" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/feed_item_padding_top_bottom"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Vehicle Number : "
+                    android:id="@+id/displayVN"
+                    android:gravity="center"/>
+
+
+            </LinearLayout>
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="1sp"
+                android:layout_marginTop="8sp"
+                android:background="#c2c3c8" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+              android:paddingTop="@dimen/feed_item_padding_top_bottom"
+                android:gravity="center"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="20sp"
+                    android:layout_height="20sp"
+                    android:text=""
+                    android:background="@drawable/bike"
+                    android:id="@+id/vType"
+                    android:gravity="center"/>
+
+
+            </LinearLayout>
+
+    </LinearLayout>
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:layout_below="@+id/ll2"
+        android:layout_marginTop="30sp"
+        android:visibility="gone"
+        android:id="@+id/ll3"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="oops"
+            android:textSize="16sp"
+            android:id="@+id/alterText"/>
+
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,103 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/feed_bg"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10sp"
+        android:background="#fff"
+        android:orientation="horizontal">
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="50sp"
+            android:background="@drawable/edittext"
+            android:layout_weight="0.55"
+            android:hint="Enter Vehicle Number"
+            android:paddingLeft="20sp"
+            android:id="@+id/vehicleNo"/>
+        <!--<mtech.com.ownerapp.Toggle.SettingsToggle-->
+            <!--xmlns:widget="http://schemas.android.com/apk/res-auto"-->
+            <!--android:id="@+id/settings1"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight="1"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:padding="10sp"-->
+            <!--android:textOff="OFF"-->
+            <!--android:textOn="ON"-->
+            <!--android:layout_marginTop="5sp"-->
+            <!--android:layout_marginLeft="10sp"-->
+            <!--widget:prefName="useMyLocation" />-->
+        <ToggleButton
+            android:id="@+id/toggleButton1"
+            android:textOff=""
+            android:textOn=""
+            android:layout_width="40sp"
+            android:layout_height="40sp"
+            android:layout_marginLeft="8sp"
+            android:layout_marginRight="8sp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/toggle_button_background"
+            />
+        <Button
+            android:layout_width="10sp"
+            android:layout_height="wrap_content"
+            android:id="@+id/addVehicle"
+            android:background="@drawable/add_button"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_weight="0.27"
+            android:onClick="addVehicle"
+            android:layout_marginRight="10sp"
+            android:text="ADD"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="1sp"
+        android:layout_marginTop="15sp"
+        android:background="#4a4a4a" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10sp"
+        android:textSize="16sp"
+        android:textColor="#4a4a4a"
+        android:textStyle="bold"
+        android:text="My Vehicles"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/feed_item_margin"
+        android:layout_marginRight="@dimen/feed_item_margin"
+        android:layout_marginTop="@dimen/feed_item_margin"
+        android:background="@drawable/bg_parent_rounded_corner"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/feed_item_padding_top_bottom"
+        android:paddingTop="@dimen/feed_item_padding_top_bottom"
+        android:paddingLeft="@dimen/feed_item_padding_left_right"
+        android:paddingRight="@dimen/feed_item_padding_left_right">
+        <LinearLayout android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+            >
+
+        <ListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5sp"
+        >
+    </ListView>
+</LinearLayout>
+        </LinearLayout>
+
+</LinearLayout>

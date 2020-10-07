@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/green"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"/>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="#fff"
+        android:layout_marginTop="5sp"
+        android:layout_marginRight="20sp"
+        android:layout_marginBottom="5sp"
+        android:layout_marginLeft="20sp"
+        >
+        <EditText
+            android:id="@+id/selectDate"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Select Date"
+            android:inputType="text"
+            android:maxLines="1"
+            android:textColor="#fff"
+            android:paddingLeft="10dp"
+            android:singleLine="true" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="#fff"
+        android:layout_marginTop="5sp"
+        android:layout_marginRight="20sp"
+        android:layout_marginBottom="5sp"
+        android:layout_marginLeft="20sp"
+        >
+        <EditText
+            android:id="@+id/startTime"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Start Time"
+            android:inputType="text"
+            android:maxLines="1"
+            android:textColor="#fff"
+            android:paddingLeft="10dp"
+            android:singleLine="true" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="#fff"
+        android:layout_marginTop="5sp"
+        android:layout_marginRight="20sp"
+        android:layout_marginBottom="5sp"
+        android:layout_marginLeft="20sp"
+        >
+        <EditText
+            android:id="@+id/validForNext"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Valid For Next"
+            android:inputType="text"
+            android:maxLines="1"
+            android:textColor="#fff"
+            android:paddingLeft="10dp"
+            android:singleLine="true" />
+    </com.google.android.material.textfield.TextInputLayout>
+       <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="#fff"
+        android:layout_marginTop="5sp"
+        android:layout_marginRight="20sp"
+        android:layout_marginBottom="5sp"
+        android:layout_marginLeft="20sp"
+        >
+        <EditText
+            android:id="@+id/vehicleNo"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Add last 4-digits of vehicle no"
+            android:inputType="text"
+            android:maxLines="1"
+            android:textColor="#fff"
+            android:paddingLeft="10dp"
+            android:singleLine="true" />
+    </com.google.android.material.textfield.TextInputLayout>
+      <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="#fff"
+        android:layout_marginTop="5sp"
+        android:layout_marginRight="20sp"
+        android:layout_marginBottom="5sp"
+        android:layout_marginLeft="20sp"
+        >
+        <EditText
+            android:id="@+id/companyName"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Select Company Name"
+            android:inputType="text"
+            android:maxLines="1"
+            android:textColor="#fff"
+            android:paddingLeft="10dp"
+            android:singleLine="true" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="#fff"
+        android:layout_marginTop="5sp"
+        android:layout_marginRight="20sp"
+        android:layout_marginBottom="5sp"
+        android:layout_marginLeft="20sp"
+        >
+        <Button
+            android:id="@+id/btn"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="OK"
+            android:inputType="text"
+            android:maxLines="1"
+            android:textColor="#fff"
+            android:paddingLeft="10dp"
+            android:singleLine="true" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+</LinearLayout>

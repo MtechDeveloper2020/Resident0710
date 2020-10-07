@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/visitors"
+            android:icon="@drawable/visitors"
+            android:title="Visitors" />
+        <item
+            android:id="@+id/serviceproviders"
+            android:icon="@drawable/servicep"
+            android:title="Service Providers" />
+        <item
+            android:id="@+id/searchVehicles"
+            android:icon="@drawable/vehicle"
+            android:title="Search/Add Vehicles" />
+        <item
+            android:id="@+id/know_your_maid"
+            android:icon="@drawable/kym"
+            android:title="Know Your Maid" />
+        <item
+            android:id="@+id/predefineVisitors"
+            android:icon="@drawable/predefinedv"
+            android:title="Predefine Visitors" />
+        <item
+            android:id="@+id/community"
+            android:icon="@drawable/predefinedv"
+            android:title="Community" />
+        <item
+            android:id="@+id/setting"
+            android:icon="@drawable/setting"
+            android:title="Setting" />
+        <item
+            android:id="@+id/share"
+            android:icon="@drawable/setting"
+            android:title="Share" />
+        <item
+            android:id="@+id/logout"
+            android:icon="@drawable/logoutt"
+            android:title="Logout" />
+    </group>
+
+    <!--<item android:title="Communicate">-->
+        <!--<menu>-->
+            <!--<item-->
+                <!--android:id="@+id/nav_share"-->
+                <!--android:icon="@drawable/ic_menu_share"-->
+                <!--android:title="Share" />-->
+            <!--<item-->
+                <!--android:id="@+id/nav_send"-->
+                <!--android:icon="@drawable/ic_menu_send"-->
+                <!--android:title="Send" />-->
+        <!--</menu>-->
+    <!--</item>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:clickable="true"
+
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/SOS"
+            android:text="SOS"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:gravity="center"
+            android:textColor="#000"
+             />
+    </LinearLayout>
+
+
+</menu>
